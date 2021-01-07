@@ -1,0 +1,93 @@
+
+
+html {
+  height: 100%;
+}
+
+body{
+    margin: 0px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(0, 0, 0) 5%, rgb(16, 56, 18));
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-color:rgb(16, 56, 18);
+    color: whitesmoke;
+}
+
+.font-color-green {
+    color: rgb(26, 212, 26);
+    &:hover{
+        color: rgb(17, 110, 32);
+    }
+}
+#collapsibleNavbar{
+    background-color: black;
+}
+.collapsing, .show{
+    text-align: center;
+    display: block;
+    width: 150vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.navbar{
+    background-color: black;
+    height: 7vh;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar-brand{
+    padding-left: 2vw;
+}
+.navbar-toggler{
+    padding-right: 2vw;
+}
+.navbar-collapse{
+    padding-right: 2vw;
+}
+.nav-description{
+    margin:0;
+    #nav-img{
+        height:7vh;
+        width: auto;
+    }
+}
+
+#div1{
+    height: 93vh;
+    text-align: center;
+    margin-top: 7vh;
+    padding-top: 15vh;
+    color: rgb(41, 196, 36);
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: black;
+    h1{
+        font-size: 16vh;
+    }
+    
+    #hello-world{
+        font-family: 'Suez One', serif;
+        -webkit-text-stroke-width: 0.3vw;
+    }
+    #my-name{
+        font-family: 'Rancho', cursive;
+        
+    }
+}
+
+.reached{
+    position: sticky;
+    top: 4vh;
+}
+
+@media(orientation: portrait){
+    #div1{
+        
+        h1{
+        font-size: 70px;
+        }
+    }
+
+}

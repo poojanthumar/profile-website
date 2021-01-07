@@ -1,0 +1,72 @@
+html {
+  height: 100%; }
+
+body {
+  margin: 0px;
+  background-image: linear-gradient(to bottom, black, black 5%, #103812);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-color: #103812;
+  color: whitesmoke; }
+
+.font-color-green {
+  color: #1ad41a; }
+  .font-color-green:hover {
+    color: #116e20; }
+
+#collapsibleNavbar {
+  background-color: black; }
+
+.collapsing, .show {
+  text-align: center;
+  display: block;
+  width: 150vw;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.navbar {
+  background-color: black;
+  height: 7vh;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.navbar-brand {
+  padding-left: 2vw; }
+
+.navbar-toggler {
+  padding-right: 2vw; }
+
+.navbar-collapse {
+  padding-right: 2vw; }
+
+.nav-description {
+  margin: 0; }
+  .nav-description #nav-img {
+    height: 7vh;
+    width: auto; }
+
+#div1 {
+  height: 93vh;
+  text-align: center;
+  margin-top: 7vh;
+  padding-top: 15vh;
+  color: #29c424;
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: black; }
+  #div1 h1 {
+    font-size: 16vh; }
+  #div1 #hello-world {
+    font-family: 'Suez One', serif;
+    -webkit-text-stroke-width: 0.3vw; }
+  #div1 #my-name {
+    font-family: 'Rancho', cursive; }
+
+.reached {
+  position: sticky;
+  top: 4vh; }
+
+@media (orientation: portrait) {
+  #intro-container h1 {
+    font-size: 70px; } }
