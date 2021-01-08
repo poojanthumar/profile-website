@@ -3,7 +3,7 @@ html {
 
 body {
   margin: 0px;
-  background-image: linear-gradient(to bottom, black, black 5%, #103812);
+  background-image: linear-gradient(to bottom, black, black 5%, rgba(29, 92, 29, 0.788), #289628);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -15,28 +15,35 @@ body {
   .font-color-green:hover {
     color: #116e20; }
 
+#top-container {
+  background-color: black; }
+
 #collapsibleNavbar {
   background-color: black; }
 
 .collapsing, .show {
   text-align: center;
-  display: block;
-  width: 150vw;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  background-color: black;
+  border-bottom-left-radius: 10vh;
+  border-bottom-right-radius: 10vh; }
+  .collapsing ul, .show ul {
+    padding-inline-start: 0px; }
+
+nav {
+  z-index: 6;
+  background-color: none; }
 
 .navbar {
-  background-color: black;
-  height: 7vh;
-  padding: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px; }
+  padding: 0px; }
 
 .navbar-brand {
   padding-left: 2vw; }
 
 .navbar-toggler {
-  padding-right: 2vw; }
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  text-align: center;
+  float: right; }
 
 .navbar-collapse {
   padding-right: 2vw; }
@@ -67,6 +74,141 @@ body {
   position: sticky;
   top: 4vh; }
 
+#div2 {
+  text-align: center;
+  color: black; }
+  #div2 #ed-header {
+    position: sticky;
+    top: 5vh;
+    color: #29c424;
+    z-index: 5; }
+  #div2 #ed-container {
+    position: relative;
+    margin: auto;
+    margin-top: 45vh;
+    width: 80%; }
+    #div2 #ed-container .timeline-bar {
+      height: 900px;
+      position: absolute;
+      text-align: center;
+      top: -150px;
+      left: 49.5%;
+      width: 1%;
+      background-color: black;
+      z-index: 1;
+      border-radius: 10px; }
+      #div2 #ed-container .timeline-bar .aeroplane {
+        font-size: 3vw;
+        position: sticky;
+        top: 45vh;
+        color: #27ce18;
+        height: 1px;
+        width: 1px; }
+        #div2 #ed-container .timeline-bar .aeroplane i {
+          position: relative;
+          z-index: 3;
+          top: -2vh;
+          transform: rotateZ(90deg);
+          left: -1.35vw; }
+    #div2 #ed-container .institute {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      width: 100%;
+      min-height: 300px; }
+      #div2 #ed-container .institute .inst-info {
+        width: 45%;
+        height: 150px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        border-radius: 25px;
+        transition: 0.5s ease-in-out; }
+        #div2 #ed-container .institute .inst-info .info-main {
+          height: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          position: relative; }
+          #div2 #ed-container .institute .inst-info .info-main h4 {
+            font-weight: 800;
+            font-size: 1.6vw; }
+          #div2 #ed-container .institute .inst-info .info-main h6 {
+            font-weight: 700;
+            font-size: 1.4vw;
+            text-align: left; }
+            #div2 #ed-container .institute .inst-info .info-main h6 strong {
+              font-weight: 700;
+              float: right;
+              text-align: right; }
+          #div2 #ed-container .institute .inst-info .info-main p {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 1.2vw; }
+          #div2 #ed-container .institute .inst-info .info-main .timeline-circle {
+            position: absolute;
+            top: 25px;
+            z-index: -1;
+            width: 2vw;
+            height: 2vw;
+            border-radius: 50%;
+            background-color: black; }
+      #div2 #ed-container .institute .odd {
+        float: left; }
+        #div2 #ed-container .institute .odd .info-main .timeline-circle {
+          left: 108.4%; }
+      #div2 #ed-container .institute .even {
+        float: right; }
+        #div2 #ed-container .institute .even .info-main .timeline-circle {
+          right: 108.4%; }
+
 @media (orientation: portrait) {
-  #intro-container h1 {
-    font-size: 70px; } }
+  #div1 h1 {
+    font-size: 70px; }
+  #div2 #ed-container {
+    width: 90%; }
+    #div2 #ed-container .timeline-bar {
+      height: 900px;
+      position: absolute;
+      top: -150px;
+      left: 94.5%;
+      width: 1%;
+      background-color: black;
+      z-index: 0;
+      border-radius: 10px; }
+      #div2 #ed-container .timeline-bar .aeroplane {
+        font-size: 3vw;
+        position: sticky;
+        top: 50vh;
+        color: #27ce18;
+        z-index: 2;
+        height: 1px;
+        width: 1px; }
+        #div2 #ed-container .timeline-bar .aeroplane i {
+          position: relative;
+          top: -1.4vh;
+          transform: rotateZ(90deg);
+          left: -1.2vw; }
+    #div2 #ed-container .institute .inst-info {
+      width: 90%; }
+      #div2 #ed-container .institute .inst-info .info-main {
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px; }
+        #div2 #ed-container .institute .inst-info .info-main h4 {
+          font-size: 3.7vw; }
+        #div2 #ed-container .institute .inst-info .info-main h6 {
+          font-size: 3vw;
+          text-align: left; }
+          #div2 #ed-container .institute .inst-info .info-main h6 strong {
+            float: right;
+            text-align: right; }
+        #div2 #ed-container .institute .inst-info .info-main p {
+          font-size: 2.5vw; }
+    #div2 #ed-container .institute .odd .info-main .timeline-circle {
+      left: 104.4%; }
+    #div2 #ed-container .institute .even {
+      float: left; }
+      #div2 #ed-container .institute .even .info-main .timeline-circle {
+        left: 104.4%; } }
+
+@media (max-width: 576px) {
+  #top-container {
+    width: 100%; } }

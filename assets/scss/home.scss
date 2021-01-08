@@ -6,7 +6,7 @@ html {
 
 body{
     margin: 0px;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(0, 0, 0) 5%, rgb(16, 56, 18));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(0, 0, 0) 5%, rgba(29, 92, 29, 0.788),rgb(40, 150, 40));
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
@@ -20,29 +20,36 @@ body{
         color: rgb(17, 110, 32);
     }
 }
+#top-container{
+    background-color: black;
+}
 #collapsibleNavbar{
     background-color: black;
 }
 .collapsing, .show{
     text-align: center;
-    display: block;
-    width: 150vw;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    ul{
+        padding-inline-start: 0px;
+    }
+}
+nav{
+    z-index: 6;
+    background-color: none;
 }
 .navbar{
-    background-color: black;
-    height: 7vh;
     padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 .navbar-brand{
     padding-left: 2vw;
 }
 .navbar-toggler{
-    padding-right: 2vw;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    text-align: center;
+    float: right;
 }
 .navbar-collapse{
     padding-right: 2vw;
@@ -82,6 +89,131 @@ body{
     top: 4vh;
 }
 
+#div2{
+    text-align: center;
+    color: black;
+    #ed-header{
+        position: sticky;
+        top: 5vh;
+        color: rgb(41, 196, 36);
+        z-index: 5;
+    }
+
+    #ed-container{
+        position: relative;
+        margin: auto;
+        margin-top: 45vh;
+        width: 80%;
+        .timeline-bar{
+            height: 900px;
+            position: absolute;
+            text-align: center;
+            top: -150px;
+            left:49.5%;
+            width: 1%;
+            background-color: rgb(0, 0, 0);
+            z-index: 1;
+            border-radius: 10px;
+
+            .aeroplane {
+                font-size: 3vw;
+                position: sticky;
+                top: 45vh;
+                color: rgb(39, 206, 24);
+                height: 1px;
+                width: 1px;
+
+                i{
+                    position: relative;
+                    z-index: 3;
+                    top: -2vh;
+                    transform: rotateZ(90deg);
+                    left: -1.35vw;
+                }
+            }
+        }
+
+        .institute{
+            padding-top: 75px;
+            padding-bottom: 75px;
+            width: 100%;
+            min-height: 300px;
+
+            .inst-info{
+                width: 45%;
+                height: 150px;
+                padding-bottom: 25px;
+                padding-top: 25px;
+                border-radius: 25px;
+                transition: 0.5s ease-in-out;
+
+
+                .info-main{
+                    height: 100%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    position: relative;
+
+                    h4{
+                        font-weight: 800;
+                        font-size: 1.6vw;
+                    }
+                    h6{
+                        font-weight: 700;
+                        font-size: 1.4vw;
+
+                        text-align: left;
+                        strong{
+                            font-weight: 700;
+                            float: right;
+                            text-align: right;
+                        }
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-weight: 600;
+                        font-size: 1.2vw;
+                    }
+                    .timeline-circle{
+                        position: absolute;
+                        top: 25px;
+                        z-index: -1;
+                        width: 2vw;
+                        height: 2vw;
+                        border-radius: 50%;
+                        background-color: rgb(0, 0, 0);
+                    }
+                    
+
+                }
+            }
+            
+            .odd{
+                float: left;
+
+                .info-main{
+                    .timeline-circle{
+
+                        left: 108.4%;
+
+                    }
+                }
+            }
+    
+            .even{
+                float: right;
+                .info-main{
+                    .timeline-circle{
+                        right: 108.4%;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
 @media(orientation: portrait){
     #div1{
         
@@ -90,4 +222,93 @@ body{
         }
     }
 
+    
+    #div2{
+        #ed-container{
+            width: 90%;
+
+            .timeline-bar{
+                height: 900px;
+                position: absolute;
+                top: -150px;
+                left:94.5%;
+                width: 1%;
+                background-color: rgb(0, 0, 0);
+                z-index: 0;
+                border-radius: 10px;
+
+                .aeroplane {
+                    font-size: 3vw;
+                    position: sticky;
+                    top: 50vh;
+                    color: rgb(39, 206, 24);
+                    z-index: 2;
+                    height: 1px;
+                    width: 1px;
+    
+                    i{
+                        position: relative;
+                        top: -1.4vh;
+                        transform: rotateZ(90deg);
+                        left: -1.2vw;
+                    }
+                }
+            }
+            .institute{
+                
+                .inst-info{
+                    width: 90%;
+        
+                    .info-main{
+                        height: auto;
+                        padding-left: 10px;
+                        padding-right: 10px;
+        
+                        h4{
+                            font-size: 3.7vw;
+                        }
+                        h6{
+                            font-size: 3vw;
+                            text-align: left;
+                            strong{
+                                float: right;
+                                text-align: right;
+                            }
+                        }
+                        p{
+                            font-size: 2.5vw;
+                        }
+        
+                    }
+                }
+                .odd{
+                    .info-main{
+                        .timeline-circle{
+    
+                            left: 104.4%;
+    
+                        }
+                    }
+                }
+                .even{
+                    float: left;
+                    .info-main{
+                        .timeline-circle{
+    
+                            left: 104.4%;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 576px)
+{
+    #top-container{
+        width: 100%;
+    }
 }
