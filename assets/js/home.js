@@ -11,7 +11,7 @@ console.log("Script in");
   $("#nav-prof").on('click', function(event) {
       event.preventDefault();
     setTimeout(function () {
-        $(window).scrollTop($('#div3').offset().top - screen.height/3.5);
+        $(window).scrollTop($('#div3').offset().top - screen.height/4);
     }, 0);
   });
   
@@ -35,17 +35,30 @@ document.addEventListener('scroll',function(){
         }
         else
         {
-            $(this).css({"box-shadow": "0px 0px 0px white", "color": "white", "transform": "scaleY(1)"});
-            $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
+            if(window.innerHeight > window.innerWidth){
+                $(this).css({"box-shadow": "0px 0px 0px white", "color": "white", "transform": "scaleY(1)"});
+                $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
+            }
+            else{
+                $(this).css({"box-shadow": "0px 0px 0px white", "color": "black", "transform": "scaleY(1)"});
+                $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
+            }
+            
 
         }
 
         if(aeroTop < screen.height/(3))
         {
-            $(this).css({"box-shadow": "0px 0px 0px white", "color": "white", "transform": "scaleY(1)"})
+            if(window.innerHeight > window.innerWidth){
+                $(this).css({"box-shadow": "0px 0px 0px white", "color": "white", "transform": "scaleY(1)"});
+                $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
+            }
+            else{
+                $(this).css({"box-shadow": "0px 0px 0px white", "color": "black", "transform": "scaleY(1)"});
+                $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
+            }
             opval = (aeroTop * 300 / screen.height ) - 20 ;
             $('#ed-header, .aeroplane').css("opacity", opval + "%");
-            $('.timeline-circle', this).css({"box-shadow": "0px 0px 0px white"});
 
         }
         else {
@@ -67,8 +80,8 @@ document.addEventListener('scroll',function(){
     
     if(window.innerHeight > window.innerWidth){
         $('.project').each(function(){
-            const profTop = $(this)[0].getBoundingClientRect().top;
-            const profDown = $(this)[0].getBoundingClientRect().bottom;
+            let profTop = $(this)[0].getBoundingClientRect().top;
+            let profDown = $(this)[0].getBoundingClientRect().bottom;
             let profDist = (screen.height/2) - ((profTop + profDown) / 2);
             if(screen.height/10 > profDist && profDist > (-1)*screen.height/10)
             {
@@ -102,6 +115,50 @@ document.addEventListener('scroll',function(){
                 $(this).css({"transform": "rotateY(180deg)"});
             },function(){
                 $(this).css({"transform": "rotateY(0deg)"});
+            })
+        },);
+    }
+
+    if(window.innerHeight > window.innerWidth){
+        $('.skills').each(function(){
+            profTop = $(this)[0].getBoundingClientRect().top;
+            profDown = $(this)[0].getBoundingClientRect().bottom;
+            profDist = (screen.height/2) - ((profTop + profDown) / 2);
+            if(screen.height/10 > profDist && profDist > (-1)*screen.height/10)
+            {
+                let scale = Math.abs(profDist*10/screen.height);
+                scale = 1 - scale;
+                scale = scale/3;
+                scale = scale + 1;
+                $(this).css({
+                    "transform": "scale(" + scale + ")" ,
+                    "z-index": "3" , 
+                    "background-color": "black",
+                    "box-shadow": "0px 0px 30px rgb(17, 224, 51)",
+                    "color": "rgb(39, 206, 24)",
+                    "border-width": "0px"
+            })
+
+                
+
+            }
+            else{
+                $(this).css({"transform": "scale(1)","z-index": "1" , "background-color":"transparent", "box-shadow": "0px 0px 0px rgb(17, 224, 51)", "color": "white","border-width": "5px" });
+            }
+            
+        })
+    }
+    else{
+        
+        $('.skills').each(function(){
+
+            $(this).css({"transform": "scale(1)","z-index": "1" , "background-color":"transparent", "box-shadow": "0px 0px 40px black", "color": "black","border-width": "0px" });
+            $(this).hover(function(){
+                $(this).css({"transform": "scale(1.2)", "color": "rgb(41, 196, 36)",
+                "background-color":"black",
+                "opacity": "0.9"});
+            },function(){
+                $(this).css({"transform": "scale(1)", "opacity": "1", "background-color":"transparent", "color": "black" });
             })
         },);
     }

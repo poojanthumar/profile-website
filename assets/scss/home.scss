@@ -15,6 +15,28 @@ body{
     
     background-size: auto;
     color: whitesmoke;
+
+    h1{
+        cursor: default;
+    }
+    h2{
+        cursor: default;
+    }
+    h3{
+        cursor: default;
+    }
+    h4{
+        cursor: default;
+    }
+    h5{
+        cursor: default;
+    }
+    h6{
+        cursor: default;
+    }
+    p{
+        cursor: default;
+    }
 }
 
 .font-color-green {
@@ -324,8 +346,80 @@ nav{
                 -webkit-backface-visibility: hidden; /* Safari */
                 backface-visibility: hidden;
                 font-weight: 700;
+                background-color: black;
+                opacity: 0.7;
+                border-radius: 20px;
             }
 
+        }
+    }
+}
+
+#div4{
+    text-align: center;
+    color: black;
+    margin-top: 10vh;
+    #skills-header{
+        position: sticky;
+        top: 5vh;
+        color: rgb(41, 196, 36);
+        z-index: 5;
+    }
+
+    #skills-cont{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-top: 15vh;
+        transition: 0.4s ease-out;
+
+        .skills{
+            width: 310px;
+            padding: 10px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            position: relative;
+            height: auto;
+            min-height: 200px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 30px black;
+            border-radius: 20px;
+            z-index: 2;
+            transition: 0.8s ease-in-out;
+
+
+            &:hover{
+                color: rgb(41, 196, 36);
+                transform: scale(1.2);
+                background-color: black;
+                opacity: 0.9;
+            }
+
+            .skills-head{
+                width: 100%;
+                min-height: 40%;
+                
+            }
+            .skills-src{
+                width: 100%;
+                min-height: 30%;
+
+            }
+            .skills-desc{
+                width: 100%;
+                min-height: 30%;
+
+            }
         }
     }
 }
@@ -335,10 +429,10 @@ nav{
         background-color:rgb(0, 0, 0);
         background-image: none;
     }
-    #top-container{
-        box-shadow: 0px 0px 40px rgb(0, 0, 0);
-
+    nav{
+        box-shadow: 0px 0px 30px black;
     }
+    
     #div1{
         
         h1{
@@ -497,6 +591,31 @@ nav{
                 }
     
             }
+        }
+    }
+
+    #div4{
+        #skills-header{
+            position: relative;
+            top:0px;
+        }
+        #skills-cont{
+            .skills{
+                width: 90%;
+                color: rgb(255, 255, 255);
+                border: rgb(41, 196, 36) 5px solid;
+                border-radius: 20px;
+                background-color: none;
+
+                &:hover{
+                    color: rgb(255, 255, 255);
+                    transform: scale(1);
+                    background-color: none;
+                    opacity: 1;
+                }
+
+            }
+
         }
     }
 
