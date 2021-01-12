@@ -1,16 +1,23 @@
 const express = require('express');
+const env = require('./config/environment');
 const port = 2000;
 const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
 const app = express();
+const db = require('./config/mongoose');
+const User = require("./models/user");
 
-app.use(sassMiddleware({
-    src: './assets/scss',
-    dest: './assets/css',
-    debug:true,
-    outputStyle: 'extended',
-    prefix: '/css'
-}))
+if(env.name == 'development')
+{
+    app.use(sassMiddleware({
+        src: './assets/scss',
+        dest: './assets/css',
+        debug:true,
+        outputStyle: 'extended',
+        prefix: '/css'
+    }))
+}
+
 
 
 app.set('view engine', 'ejs');
