@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
+      
         <nav id= "nbar" class="navbar navbar-expand-sm fixed-top">
             <div id = "top-container">
               <a class="navbar-brand font-color-green" href="/" id = "home-top" ><i class="fa fa-home">&nbsp;</i>Home</a>
@@ -34,7 +35,7 @@
                   <a class="nav-link font-color-green" href="/" id = "nav-extra">Extracurriculars</a>
                 </li>    
                 <li class="nav-item">
-                  <a class="nav-link font-color-green" href="#">Contact Me</a>
+                  <a class="nav-link font-color-green" href="/" id = "nav-contact">Contact Me</a>
                 </li>   
               </ul>
             </div>  
@@ -259,96 +260,44 @@
               </div>
             </div>
           </div>
-          <div>HELLO</div>
+          <div id = "div6">
+            <div id = "contact-header">
+              <h1>Contact Me</h1>
+            </div>
 
-          <div>HELLO</div>
-
-          <div>HELLO</div>
-
-          <div>HELLO</div>
-
-
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div><div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div><div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div><div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div><div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-          <div>HELLO</div>
-         
+            <div id = "social-container">
+              <div id = "form-container">
+                <div id = "form-header">
+                  <h4>
+                    Enter the details below,<br>
+                    and you'll hear from me soon!
+                  </h4>
+                </div>
+                <form id = "form" action = "/contact" method = "POST">
+                  <input class = "social-input" type = "text" name = "name" placeholder="Name" autocomplete="off" required>
+                  <input class = "social-input" type = "email" name = "email" placeholder="Email ID" autocomplete="off" required>
+                  <input class = "social-input" type = "text" name = "phone" placeholder="Phone Number (optional)" autocomplete="off" >
+                  <textarea row = "5" class = "social-input" type = "text" name = "message" placeholder="Message (optional)" autocomplete="off"></textarea>
+                  <button type="submit" id = "send-btn"> <i class="fas fa-paper-plane"></i> &nbsp;Send</button> 
+                </form>
+              </div>
+              <div id = "social-icon">
+                <div id = "icon-header">
+                  <h4>
+                    Or ...
+                  </h4>
+                </div>
+                <div id = "icon-cont">
+                  <div class = "social"><a href = "https://www.linkedin.com/in/poojanthumar"><i class="fab fa-linkedin-in"></i></a></div>
+                <div class = "social"><a href = "https://github.com/poojanthumar"><i class="fab fa-github"></i></a></div>
+                <div class = "social"><a href = "mailto:poojanthumar@gmail.com"><i class="fas fa-envelope"></i></a></div>
+                <div class = "social"><a href = "https://m.me/poojanthumar"><i class="fab fa-facebook-f"></i></a></div>
+                <div class = "social"><a href = "tel:+918171017931"><i class="fas fa-phone-alt"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
           <script src="/js/home.js"></script>
     </body>
 </html>

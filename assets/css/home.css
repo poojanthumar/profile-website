@@ -405,6 +405,127 @@ nav {
             opacity: 1;
             transition: opacity 0.5s ease-in-out 0.9s; }
 
+#div6 {
+  text-align: center;
+  color: black;
+  margin-top: 10vh; }
+  #div6 #contact-header {
+    color: #29c424;
+    z-index: 5; }
+  #div6 #social-container {
+    width: 50%;
+    height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    transition: 0.4s ease-in-out;
+    border: black 1px solid;
+    z-index: 3;
+    background-color: black;
+    color: #29c424;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px black; }
+    #div6 #social-container #form-container {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      flex-wrap: wrap;
+      z-index: 3; }
+      #div6 #social-container #form-container #form-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%; }
+      #div6 #social-container #form-container #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 75%; }
+        #div6 #social-container #form-container #form .social-input {
+          width: 100%;
+          margin: 0;
+          padding: 0px;
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-top: 2%;
+          height: 12%;
+          padding-left: 10px; }
+        #div6 #social-container #form-container #form textarea, #div6 #social-container #form-container #form input[type] {
+          background-color: transparent;
+          border-width: 0px;
+          border-bottom: #29c424 2px solid;
+          color: #29c424;
+          font-weight: 600;
+          transition: 0.4s ease-in-out; }
+          #div6 #social-container #form-container #form textarea:focus, #div6 #social-container #form-container #form input[type]:focus {
+            outline: none;
+            overflow: hidden;
+            border-color: #095a05; }
+            #div6 #social-container #form-container #form textarea:focus::placeholder, #div6 #social-container #form-container #form input[type]:focus::placeholder {
+              opacity: 0; }
+          #div6 #social-container #form-container #form textarea::placeholder, #div6 #social-container #form-container #form input[type]::placeholder {
+            color: #29c424;
+            opacity: 1; }
+        #div6 #social-container #form-container #form textarea {
+          overflow: auto;
+          resize: none; }
+        #div6 #social-container #form-container #form #send-btn {
+          margin-top: 2%;
+          height: 16%;
+          width: 20%;
+          background-color: #29c424;
+          outline: none;
+          border-width: 0px;
+          border-radius: 10px;
+          font-weight: 700;
+          transition: 0.4s ease-in-out; }
+          #div6 #social-container #form-container #form #send-btn:hover {
+            background-color: #095a05;
+            color: white; }
+    #div6 #social-container #social-icon {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      flex-wrap: wrap;
+      z-index: 3; }
+      #div6 #social-container #social-icon #icon-header {
+        width: 100%;
+        height: 40%;
+        padding-top: 1.5%; }
+      #div6 #social-container #social-icon #icon-cont {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%; }
+        #div6 #social-container #social-icon #icon-cont .social {
+          width: 50px;
+          height: 50px;
+          font-size: 1.3rem;
+          transition: 0.3s ease-in-out;
+          margin-left: 2%;
+          margin-right: 2%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%; }
+          #div6 #social-container #social-icon #icon-cont .social i {
+            color: #29c424; }
+          #div6 #social-container #social-icon #icon-cont .social:hover {
+            background-color: #29c424; }
+            #div6 #social-container #social-icon #icon-cont .social:hover i {
+              color: black; }
+
 @media (orientation: portrait) {
   body {
     background-color: black;
@@ -573,7 +694,22 @@ nav {
             color: #29c424; }
             #div5 #extra-cont .extra-wide .extra-content:hover .extra-hidden li {
               opacity: 1;
-              transition: 0s; } }
+              transition: 0s; }
+  #div6 {
+    text-align: center;
+    color: black;
+    margin-top: 10vh; }
+    #div6 #contact-header {
+      color: #29c424;
+      z-index: 5; }
+    #div6 #social-container {
+      width: 90%; }
+      #div6 #social-container #form-container #form #send-btn {
+        width: 50%; }
+      #div6 #social-container #social-icon #icon-header {
+        padding-top: 5%; }
+      #div6 #social-container #social-icon #icon-cont {
+        width: 90%; } }
 
 @media (max-width: 576px) {
   #top-container {

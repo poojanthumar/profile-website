@@ -1,5 +1,6 @@
 console.log("Script in");
 
+
 $("#home-top").on('click', function(event) {
     event.preventDefault();
 
@@ -48,6 +49,17 @@ $("#nav-extra").on('click', function(event) {
     }
 
       $(window).scrollTop($('#div5').offset().top - screen.height/10);
+  }, 0);
+});
+
+$("#nav-contact").on('click', function(event) {
+    event.preventDefault();
+  setTimeout(function () {
+    if(window.innerWidth < 576){
+        $("#trg-btn").trigger('click');
+    }
+
+      $(window).scrollTop($('#div6').offset().top);
   }, 0);
 });
   
@@ -142,8 +154,7 @@ document.addEventListener('scroll',function(){
             
         })
     }
-    else{
-        
+    else{    
         $('.project').each(function(){
 
             $(this).css({"transform": "scale(1)","z-index": "1" , "background-color":"transparent", "box-shadow": "0px 0px 40px black", "color": "white" });
@@ -184,8 +195,7 @@ document.addEventListener('scroll',function(){
             
         })
     }
-    else{
-        
+    else{    
         $('.skills').each(function(){
 
             $(this).css({"transform": "scale(1)","z-index": "1" , "background-color":"transparent", "box-shadow": "0px 0px 40px black", "color": "black","border-width": "0px" });
@@ -227,11 +237,10 @@ document.addEventListener('scroll',function(){
             
         })
     }
-    else{
-        
+    else{       
         $('.extra-content').each(function(){
 
-            $(this).css({"color":"black","transform": "scale(1)","z-index": "1" , "box-shadow": "0px 0px 30px black","border-width": "0px" });
+            $(this).css({"transform": "scale(1)","z-index": "1" , "box-shadow": "0px 0px 30px black","border-width": "0px"});
             $(this).hover(function(){
                 $(this).css({
                     "color": "rgb(41, 196, 36)",
