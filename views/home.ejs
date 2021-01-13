@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/2982f7c64c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="<%= assetPath('css/home.css') %>">
     </head>
     <body>
       
@@ -98,7 +98,7 @@
             <div id = "project-container">
               <div class = "project">
                 <div class = "project-img">
-                  <img src = "/img/hrms.png">
+                  <img src = "<%= assetPath('img/hrms.png') %>">
                 </div>
                 <div class = "project-bg"></div>
                 <div class = "project-title">
@@ -118,7 +118,7 @@
               </div>
               <div class = "project">
                 <div class = "project-img">
-                  <img src = "/img/todo.png">
+                  <img src = "<%= assetPath('img/todo.png') %>">
                 </div>
                 <div class = "project-bg"></div>
                 <div class = "project-title">
@@ -132,7 +132,7 @@
               </div>
               <div class = "project">
                 <div class = "project-img">
-                  <img src = "/img/inshorts.png">
+                  <img src = "<%= assetPath('img/inshorts.png') %>">
                 </div>
                 <div class = "project-bg"></div>
                 <div class = "project-title">
@@ -146,7 +146,7 @@
               </div>
               <div class = "project">
                 <div class = "project-img">
-                  <img src = "/img/d3.png">
+                  <img src = "<%= assetPath('img/d3.png') %>">
                 </div>
                 <div class = "project-bg"></div>
                 <div class = "project-title">
@@ -161,7 +161,7 @@
               </div>
               <div class = "project">
                 <div class = "project-img">
-                  <img src = "/img/micro.png">
+                  <img src = "<%= assetPath('img/micro.png') %>">
                 </div>
                 <div class = "project-bg"></div>
                 <div class = "project-title">
@@ -298,6 +298,6 @@
             </div>
           </div>
           <br>
-          <script src="/js/home.js"></script>
+          <script src="<%= assetPath('js/home.js') %>"></script>
     </body>
 </html>
